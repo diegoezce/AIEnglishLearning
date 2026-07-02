@@ -1,0 +1,32 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Python
+*.egg-info/
+.pytest_cache/
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

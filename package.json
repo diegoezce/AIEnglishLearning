@@ -1,0 +1,5 @@
+{
+  "name": "blest-learning",
+  "private": true,
+  "workspaces": ["frontend", "backend"]
+}
