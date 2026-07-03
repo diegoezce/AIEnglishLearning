@@ -18,7 +18,7 @@ export const DEMO_LESSON: Lesson = {
         definition:
           "The skill of designing clear, effective instructions for an AI model to get the best possible output.",
         example:
-          "Good prompt engineering can be the difference between a generic response and exactly what you need.",
+          "Using prompt engineering, the office administrator drafted a supplier complaint letter in seconds instead of spending 20 minutes writing it from scratch.",
       },
     },
     {
@@ -29,7 +29,7 @@ export const DEMO_LESSON: Lesson = {
       xp_value: 1,
       content: {
         title: "The Anatomy of a Great Prompt",
-        body: "A well-crafted prompt has four key elements: a clear goal, relevant context, a defined audience, and a specified output format. When you include all four, the AI has everything it needs to give you a useful, accurate response.\n\nThink of it like briefing a new colleague. You wouldn't just say \"write something about the project\" — you'd explain what you need, why, who it's for, and what format works best.",
+        body: "A well-crafted prompt has four key elements: a clear goal, relevant context, a defined audience, and a specified output format. When you include all four, the AI has everything it needs to give you a useful, accurate response.\n\nThink of it like briefing a new colleague. You wouldn't just say \"write something about the invoice\" — you'd explain what you need, why, who it's for, and what format works best. The same logic applies to AI.",
         key_points: [
           "Goal: what you want the AI to do",
           "Context: background information the AI needs",
@@ -46,16 +46,16 @@ export const DEMO_LESSON: Lesson = {
       xp_value: 2,
       content: {
         question:
-          "Which of these is the BEST prompt for summarizing a meeting?",
+          "Which is the BEST prompt for writing an email to a supplier about a late delivery?",
         options: [
-          "Summarize this.",
-          "Summarize the following meeting transcript in 5 bullet points for a manager who was not present. Focus on decisions made and next steps.",
-          "Write a summary about the meeting transcript.",
-          "Can you please summarize for me?",
+          "Write an email about the delivery.",
+          "Write a formal email to our supplier, Contoso Ltd., requesting an update on order #4521, which is 5 days overdue. Keep the tone professional but firm, and ask for a new delivery date.",
+          "Can you write something about our late order?",
+          "Write an email complaining about the supplier.",
         ],
         correct_index: 1,
         explanation:
-          "Option B includes a goal (summarize), format (5 bullet points), audience (manager who wasn't there), and context (focus on decisions and next steps). The others are too vague.",
+          "Option B includes a goal (request an update), context (supplier name, order number, 5 days overdue), tone (professional but firm), and a clear ask (new delivery date). The others are too vague for the AI to produce a useful result.",
       },
     },
     {
@@ -66,17 +66,17 @@ export const DEMO_LESSON: Lesson = {
       xp_value: 2,
       content: {
         template:
-          "Act as a {blank_0} and write a {blank_1} email to a client explaining a project delay. Keep the tone {blank_2} and limit it to {blank_3} sentences.",
-        blanks: ["senior project manager", "professional", "apologetic", "5"],
+          "Act as a {blank_0} and write a {blank_1} email to a vendor explaining a payment delay. Keep the tone {blank_2} and limit it to {blank_3} sentences.",
+        blanks: ["senior office administrator", "professional", "apologetic", "5"],
         word_bank: [
-          "senior project manager",
+          "senior office administrator",
           "casual",
           "professional",
           "apologetic",
           "aggressive",
           "5",
           "20",
-          "junior developer",
+          "new intern",
         ],
       },
     },
@@ -128,14 +128,14 @@ export const DEMO_LESSON: Lesson = {
       xp_value: 5,
       content: {
         instruction:
-          "Write an AI prompt to generate a short weekly status update email for your manager.",
+          "Write an AI prompt to draft a professional email requesting quotes from a new office supplies vendor.",
         context:
-          "You are a software developer. This week you finished a new login feature, fixed 3 bugs, and are starting a new API integration. Your manager likes concise updates.",
+          "You are an office administrator. Your company needs to find a new supplier for printer paper, pens, and folders. You need at least 3 price quotes by the end of the month. The email should be formal and include your company name: Nexus Group.",
         rubric:
           "Score based on: clarity of goal, inclusion of relevant context, specified format or length, professional English.",
         min_words: 20,
         sample_answer:
-          "Act as a professional software developer. Write a concise weekly status update email for my manager. This week I completed the login feature, fixed 3 bugs, and started the API integration. Keep it under 100 words and use bullet points for the key achievements.",
+          "Act as a professional office administrator at Nexus Group. Write a formal email to a potential office supplies vendor requesting a price quote for printer paper, pens, and folders. Mention that we need the quote by the end of the month. Keep the tone polite and professional, and ask them to include bulk pricing options.",
       },
     },
   ],
